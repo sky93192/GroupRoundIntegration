@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/holdEvent.css">
+    <link rel="icon" href="../img/logo.png" type="image/gif" sizes="16x16">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <title>團團轉 Group Round</title>
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded">
+            <div class="container-fluid">
+                <button type="button" class="btn"><a class="navbar-brand" href="./mainpageA.html">
+                        <img src="../img/logo-text-1.png" type="image/gif" width="120px"></a></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- 活動建立頁面 -->
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary btn-sm"><a href="./holdEventC1.html"
+                                    class="link-light">辦活動</a></button>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <!-- 搜尋 -->
+                        <input class="form-control me-2 bg-light" type="search" placeholder="搜尋..." aria-label="Search">
+                        <a href="./actSearch___B.html"><button class="btn btn-secondary btn-sm" type="submit"><img
+                                    src="../img/search.svg" type="image/gif" size="16x16"></button></a>
+                    </form>
+                    <!-- 登入註冊 -->
+                    <a class="nav-link link-dark" href="./logInE-1.php"><img src="../img/log-in.svg" type="image/gif"
+                            size="16x16">
+                        登入/註冊</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Oreder -->
+        <div class="position-relative m-4">
+            <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 0;" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <button type="button"
+                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-main rounded-pill"
+                style="width: 2rem; height:2rem;">1</button>
+            <button type="button"
+                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill"
+                style="width: 2rem; height:2rem;">2</button>
+            <button type="button"
+                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                style="width: 2rem; height:2rem;">3</button>
+        </div>
+
+        <!-- Tag -->
+        <div class="d-flex justify-content-center">
+            <div style="width: 780px;">
+                <h4 class="my-3 d-flex justify-content-center">選擇活動分類</h4>
+
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/artCulture.png" alt="Travel">
+                        <img class="category-img" src="../img/artCulture-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>藝文</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/nature.png" alt="Travel">
+                        <img class="category-img" src="../img/nature-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>生態與環境</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/learn.png" alt="Travel">
+                        <img class="category-img" src="../img/learn-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>學習</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/music.png" alt="Travel">
+                        <img class="category-img" src="../img/music-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>音樂</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/family.png" alt="Travel">
+                        <img class="category-img" src="../img/family-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>親子</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/pet.png" alt="Travel">
+                        <img class="category-img" src="../img/pet-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>寵物</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/outdoor.png" alt="Travel">
+                        <img class="category-img" src="../img/outdoor-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>旅遊與戶外</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/exercise.png" alt="Travel">
+                        <img class="category-img" src="../img/exercise-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>運動</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/spirit.png" alt="Travel">
+                        <img class="category-img" src="../img/spirit-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>宗教與心靈</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/science.png" alt="Travel">
+                        <img class="category-img" src="../img/science-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>科學與教育</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/social.png" alt="Travel">
+                        <img class="category-img" src="../img/social-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>社交</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/board.png" alt="Travel">
+                        <img class="category-img" src="../img/board-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>桌遊</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/escape.png" alt="Travel">
+                        <img class="category-img" src="../img/escape-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>密室逃脫</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/food.png" alt="Travel">
+                        <img class="category-img" src="../img/food-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>美食與品味</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/online.png" alt="Travel">
+                        <img class="category-img" src="../img/online-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>線上</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/cook.png" alt="Travel">
+                        <img class="category-img" src="../img/cook-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>烹飪</p>
+                </div>
+                <div class="category scalebig">
+                    <div class="category-img-container">
+                        <img class="category-img" src="../img/camera.png" alt="Travel">
+                        <img class="category-img" src="../img/camera-focus.png" style="display: none;" alt="Travel">
+                    </div>
+                    <p>攝影</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Button -->
+        <div class="d-flex justify-content-between mb-4">
+            <a href="./mainpageA.html">
+                <input class="px-3 btn btn-secondary" id="btn" type="button" onclick="" value="上一步" />
+            </a>
+            <a href="./holdEventC2.html">
+                <input class="px-3 btn btn-main" id="btn" type="button" onclick="" value="下一步" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start">
+        <div class="container ">
+            <!-- Copyright -->
+            <div class="text-center p-4 text-light">
+                <span>© 2021 Copyright GroupRound團團轉共遊平台製作小組</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $(".category ").click(function () {
+                $(this).find("p").toggleClass('font-main');
+                $('img', this).toggle();
+                $(this).find("img:first").toggleClass("seleted");
+            })
+        })
+
+        // $(".tog").click(function () {
+        //     $('img',this).toggle();
+        //     $(this).find("img:first").toggleClass("seleted");
+        // });
+
+
+        // $(".tog img").click(function () {
+        //     const src = $(this).attr("src");
+        //     var newSrc = src.slice(0,-4);
+        //     console.log(src);
+        //     console.log(newSrc);
+        //     var togSrc = [ src, newSrc+'-focus.png' ];
+        //     this.src =  togSrc.reverse()[0];
+        //     newSrc = src;
+        // });
+    </script>
+
+</html>

@@ -1,0 +1,18 @@
+btn-orange
+橘色按鈕 白字
+
+btn-outline-orange
+白底橘框線按鈕 橘字
+
+btn-primary
+藍綠色按鈕 白字
+
+btn-outline-primary
+白底藍綠框線按鈕 藍綠字
+
+btn-secondary
+灰色按鈕 黑字
+outline樣式未更改
+
+a
+藍綠色超連結 無底線

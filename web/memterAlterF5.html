@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改會員資料</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+    <link rel="icon" href="/img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/css/member.css">
+
+    <style>
+        /* *{outline: 1px solid #000;} */
+        
+    </style>
+</head>
+
+<body>
+   
+    <!-- 頁首 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded mb-5">
+            <div class="container-fluid">
+                <button type="button" class="btn"><a class="navbar-brand" href="/web/header.php">
+                <img src="/img/logo-text-1.png" type="image/gif" width="120px"></a></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- 活動建立頁面 -->
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary btn-sm" ><a href="" class="link-light">辦活動</a></button>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <!-- 搜尋 -->
+                        <input class="form-control me-2 bg-light" type="search" placeholder="搜尋..." aria-label="Search">
+                        <button class="btn btn-secondary btn-sm" type="submit"><img src="/img/search.svg" type="image/gif" size="16x16"></button>
+                    </form>
+                    <!-- 登入註冊 -->
+                    <a class="nav-link link-dark" href=""><img src="/img/log-in.svg" type="image/gif" size="16x16"> 登入/註冊</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div id="leftDiv">
+
+            <figure>
+
+                <label class="btn ">
+                    <img src="/img/cafeGuy.jpg" alt="" style="width: 200px;">
+                    <input style="display:none;" type="file"  >
+                    <figcaption id="submitUserPhoto">
+                        <span style="color: #0d6efd;">更換頭像</span>                        
+                    </figcaption>
+                </label>
+            </figure>
+
+
+            <div id="userContents">
+                <a href="">
+                   <h4>參加的活動</h4>
+                </a>
+                <a href="">
+                    <h4>發起的活動</h4>
+                </a>
+                <a href="">
+                    <h4>已結束的活動</h4>
+                </a>
+                <a href="">
+                    <h4>收藏的活動</h4>
+                </a>
+                <a href="">
+                    <h4>修改基本資料</h4>
+                </a>
+                <a href="">
+                    <h4>團員回饋</h4>
+                </a>
+
+            </div>
+        </div>
+
+        <div id="rightDiv">
+            <form action="" method="POST">
+                <section>
+                    <h2>基本資料</h2>
+                    <div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">姓名</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">暱稱</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="nick name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">密碼</span>
+                            <input type="password" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="password">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">電子信箱</span>
+                            <input type="email" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="ur_email@mail.com">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">生日</span>
+                            <input type="date" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" id="date" name="date">
+                        </div>
+                        <select name="userBirthday" class="form-select" aria-label="Default select example">
+                            <option selected>所在地</option>
+                            <option value="TPE">台北</option>
+                            <option value="TYN">桃園</option>
+                            <option value="HSZ">新竹</option>
+                            <option value="ZMI">苗栗</option>
+                            <option value="TXG">台中</option>
+                            <option value="CHW">彰化</option>
+                            <option value="NTC">南投</option>
+                            <option value="YUN">雲林</option>
+                            <option value="CYI">嘉義</option>
+                            <option value="TNN">台南</option>
+                            <option value="KHH">高雄</option>
+                            <option value="PIF">屏東</option>
+                            <option value="KEL">基隆</option>
+                            <option value="ILA">宜蘭</option>
+                            <option value="HUN">花蓮</option>
+                            <option value="TTT">台東</option>
+                            <option value="PEH">澎湖</option>
+                            <option value="GNI">綠島</option>
+                            <option value="KYD">蘭嶼</option>
+                            <option value="KNH">金門</option>
+                            <option value="MFK">馬祖</option>
+                            <option value="LNN">連江</option>
+                        </select>
+
+                    </div>
+
+                </section>
+
+                <hr class='hr_slid'>
+
+                <section>
+                    <h2>自我介紹</h2>
+                    <div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="請輸入你的自我介紹"></textarea>
+
+                    </div>
+                </section>
+
+
+                <hr class='hr_slid'>
+
+                <section>
+                    <div id="userInterest" class="row">
+                        <h3>興趣</h3>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                        <div class="col-3">這裡放興趣</div>
+                    </div>
+
+                </section>
+                <div id="submitBtn" class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">
+                        確定修改
+                    </button>
+                </div>
+                
+
+            </form>
+        </div>
+    </article>
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light fw-bold">關於我們</h5>
+                    <p class="text-light">
+                        團<br>
+                        團團<br>
+                        團團團<br>
+                        團團<br>
+                        團<br>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light fw-bold">聯絡我們</h5>
+                    <p class="text-light">
+                        轉<br>
+                        轉轉<br>
+                        轉轉轉<br>
+                        轉轉<br>
+                        轉<br>
+                    </p>
+                </div>
+                <!-- Icon links -->
+                <div class="container pt-4 text-center text-white">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i>
+                        </a>
+
+                        <!-- Google -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-google"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Github -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-github"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3 text-light">
+                    <h6>© 2021 Copyright GroupRound團團轉共遊平台製作小組</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>

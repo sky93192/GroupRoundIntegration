@@ -1,0 +1,62 @@
+/* *{outline: 1px solid #000;} */
+
+body{
+    background-color: #f6f7f8;
+}
+a{  
+    text-decoration: none;
+    color: gray;
+}
+
+#leftDiv {
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    /* left: 100px; */
+    left: 8%;
+    text-align: center;
+
+}
+
+.hr_slid {
+    -webkit-mask-image: linear-gradient(to right, transparent, black, transparent);
+    mask-image: linear-gradient(to right, transparent, black, transparent);
+}
+
+#rightDiv {
+    width: 700px;
+    /* margin-left: 500px; */
+    margin-left: 40%;
+    /* padding-top: 50px; */
+}
+
+div>img {
+    margin: 20px;
+}
+
+section>button {
+    position: relative;
+    left: 600px;
+}
+
+
+#userInterest>div{
+    background-color:#41B2AC;
+    border-radius: 10px;
+    color: white;   
+    width: 110px;
+    text-align: center;
+    line-height:50px;
+    margin: 5px;
+}
+#userContents {
+    text-align: left;
+    padding-left: 75px;
+    
+}
+
+#submitBtn {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+

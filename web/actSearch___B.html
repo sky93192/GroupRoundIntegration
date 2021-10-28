@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="icon" href=".../img/logo.png" type="image/gif" sizes="16x16">
+    <title>團團轉 Group Round</title>
+    <link rel="stylesheet" href="../css/ActCss/actSearch.css">
+
+    <link rel="stylesheet" href="/css/mainpage.css">
+    <link href="/css/customForAll.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <!-- 頁首 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded mb-5">
+            <div class="container-fluid">
+                <button type="button" class="btn"><a class="navbar-brand" href="./header.php">
+                        <img src="../img/logo-text-1.png" type="image/gif" width="120px"></a></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- 活動建立頁面 -->
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary btn-sm"><a href=""
+                                    class="link-light">辦活動</a></button>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <!-- 搜尋 -->
+                        <input class="form-control me-2 bg-light" type="search" placeholder="搜尋..." aria-label="Search">
+                        <button class="btn btn-secondary btn-sm" type="submit"><img src="../img/search.svg"
+                                type="image/gif" size="16x16"></button>
+                    </form>
+                    <!-- 登入註冊 -->
+                    <a class="nav-link link-dark" href=""><img src="../img/log-in.svg" type="image/gif" size="16x16">
+                        登入/註冊</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="ActPageSearch container">
+            <div class="ActPageSearchSelect"><img src="../img/selecticon.png" style="width: 1vw;height: 2vh;"></div>
+            <select class="form-select" aria-label=""
+                style="background-color: rgb(240, 240, 240) ;font-weight: 900;text-align: center;width: 10vw;">
+                <option selected>活動類型...</option>
+                <option value="1">桌遊</option>
+                <option value="2">密室脫逃</option>
+                <option value="3">運動</option>
+            </select>
+            <input type="text" style="width: 47.5vw;" placeholder='請輸入關鍵字' id="searchinput"
+                class="form-control"></input>&nbsp
+            <button type="button" class="btn btn-orange btn-sm" id="searchbtn" onclick=Esearch()>搜尋</button>
+        </div>
+
+    </div>
+
+
+
+    <div class="row" style="height: 32px;margin-right: 0px;">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="container" style="display: flex;justify-content: center ;align-items: center;">
+
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">台中</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">台北</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">高雄</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">桌遊</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">密室脫逃</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">新北</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="box"><span class="ActTags badge rounded-pill btn-main">運動</span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <br> <br>
+
+    <div class="container" style="display: grid; justify-content:start;">
+        <div>
+
+            <span>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+            </span>
+            <span style="font-size:1.5em ;color:#616161 ">和"台中"有關的活動...</span>
+        </div>
+    </div>
+
+
+    <div class="AllCard">
+        <a href="#">
+            <div class="card" id="card1" style="width: 24vw;;">
+                <img src="../img/boardgame1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">一起來玩瘟疫危機！</h4>
+                </div>
+                <div class="card-footer" id="MoreEventButton">
+                    <small class="text-muted">10月24日 19:00</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card2" style="width: 24vw;">
+                <img src="../img/room1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">國慶連假密室脫逃團！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月10日 14:30</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card3" style="width: 24vw;">
+                <img src="../img/TRAVEL1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">台中各景點一日遊！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月19日 08:00</small>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+    <br>
+    <div class="AllCard">
+        <a href="#">
+            <div class="card" id="card1" style="width: 24vw;;">
+                <img src="../img/boardgame1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">一起來玩瘟疫危機！</h4>
+                </div>
+                <div class="card-footer" id="MoreEventButton">
+                    <small class="text-muted">10月24日 19:00</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card2" style="width: 24vw;">
+                <img src="../img/room1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">國慶連假密室脫逃團！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月10日 14:30</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card3" style="width: 24vw;">
+                <img src="../img/TRAVEL1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">台中各景點一日遊！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月19日 08:00</small>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+    <br>
+
+    <div class="AllCard">
+        <a href="#">
+            <div class="card" id="card1" style="width: 24vw;;">
+                <img src="../img/boardgame1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">一起來玩瘟疫危機！</h4>
+                </div>
+                <div class="card-footer" id="MoreEventButton">
+                    <small class="text-muted">10月24日 19:00</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card2" style="width: 24vw;">
+                <img src="../img/room1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">國慶連假密室脫逃團！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月10日 14:30</small>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" id="card3" style="width: 24vw;">
+                <img src="../img/TRAVEL1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text">台中各景點一日遊！</h4>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">10月19日 08:00</small>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+    <br>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+
+
+        <div style="display: grid; justify-content:center ;grid-gap:3px;">
+            <div class="row row-cols-12">
+                <div class="col">
+                    <div class="row row-cols-12" style="display: grid; justify-content:center ;grid-gap:3px;">
+                        <div class="col">
+
+
+                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+
+                                <div class="btn-group" style="box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);">
+                                    <button type="button" class="btn "
+                                        style="background-color:#41B3AC ;color:white">&#60&#60</button>
+                                    <button type="button" class="btn ">1</button>
+                                    <button type="button" class="btn ">2</button>
+                                    <button type="button" class="btn ">3</button>
+                                    <button type="button" class="btn ">4</button>
+                                    <button type="button" class="btn ">5</button>
+                                    <button type="button" class="btn ">6</button>
+                                    <button type="button" class="btn ">7</button>
+                                    <button type="button" class="btn ">8</button>
+                                    <button type="button" class="btn ">9</button>
+                                    <button type="button" class="btn ">10</button>
+                                    <button type="button" class="btn ">11</button>
+                                    <button type="button" class="btn ">...</button>
+                                    <button type="button" class="btn ">27</button>
+                                    <button type="button" class="btn "
+                                        style="background-color:#41B3AC;color:white">&#62&#62</button>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- 這邊改了 -->
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light fw-bold">關於我們</h5>
+                    <p class="text-light">
+                        團<br>
+                        團團<br>
+                        團團團<br>
+                        團團<br>
+                        團<br>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-light fw-bold">聯絡我們</h5>
+                    <p class="text-light">
+                        轉<br>
+                        轉轉<br>
+                        轉轉轉<br>
+                        轉轉<br>
+                        轉<br>
+                    </p>
+                </div>
+                <!-- Icon links -->
+                <div class="container pt-4 text-center text-white">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i>
+                        </a>
+
+                        <!-- Google -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-google"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Github -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><i class="fab fa-github"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3 text-light">
+                    <h6>© 2021 Copyright GroupRound團團轉共遊平台製作小組</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
